@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    /* cores padroes*/
+    :root{
+    --cor1:#4D0909;
+    --cor2:#000000;
+    --cor3:#4D2020;
+    --cor4:#991212;
+    --cor5:#f0f0f0;
+}
+    /* corpo da página */
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image:url(../img/backfundo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+    /* cabeçalho com altura de 80px */
+    header {
+    height: 80px;
+}
+    /* Menu*/
+    nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+    nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  nav li {
+  margin: 0 10px;
+}
+  nav a {
+  text-decoration: none;
+  font-size: 18px;
+}
+  /* criei um grupo class para não aplicar na img-insta*/
+  .linkgrupo1:hover{
+  padding: 10px;
+  background-color: var(--cor2);
+  transition-delay: 0.2s;
+  border-radius: 5px;
+  color: var(--cor5);
+}
+
+/* responsividade usando @media, página quando chega em 768px ela obdece os comandos citados */
+@media screen and (max-width: 768px) {
+    nav {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    }
+
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    nav li {
+    margin: 10px 0;
+    }
+}
+.nav li,a {
+    padding: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor2);
+}
+    img{
+    width: 23px;
+} 
+.titulo-principal{
+    margin: 250px auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.footer{
+    background-color: var(--cor2);
+    color: #991212;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: var(--cor5);
+}
